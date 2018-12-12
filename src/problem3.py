@@ -137,10 +137,10 @@ def run_test_problem3a():
 
 
 def problem3a(r, s):
-    total=0
+    total = 0
     for k in range(r,s+1):
-        if sum_of_digits(k ** 3)%2 == 1:
-            total=total+k
+        if sum_of_digits(k ** 3) % 2 == 1:
+            total = total+k
     return total
 
 
@@ -268,9 +268,9 @@ def run_test_problem3b():
 
 
 def problem3b(m, r):
-    total=0
+    total = 0
     for k in range(m):
-        total=(k+1)/((r+k)**(k+1))+total
+        total = (k+1)/((r+k)**(k+1)) + total
     return total
 
     """
