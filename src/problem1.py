@@ -66,7 +66,8 @@ def run_test_problem1():
 def problem1(square, thickness, window):
     square.attach_to(window)
 
-    circle = rg.Circle(rg.Point(square.center.x, square.center.y+square.length_of_each_side), square.length_of_each_side/2)
+    center=rg.Point(square.center.x, square.center.y+square.length_of_each_side)
+    circle = rg.Circle(center, square.length_of_each_side/2)
     circle.fill_color = square.fill_color
     circle.outline_thickness = thickness
     circle.attach_to(window)
